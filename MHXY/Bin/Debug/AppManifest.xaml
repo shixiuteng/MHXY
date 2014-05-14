@@ -1,0 +1,13 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="MHXY" EntryPointType="MHXY.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="MHXY" Source="MHXY.dll" />
+    <AssemblyPart x:Name="HtmlAgilityPack" Source="HtmlAgilityPack.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Xml.XPath" Source="System.Xml.XPath.dll" />
+    <AssemblyPart x:Name="WP7_ControlsLib" Source="WP7_ControlsLib.dll" />
+    <AssemblyPart x:Name="WP7_JsonLib" Source="WP7_JsonLib.dll" />
+    <AssemblyPart x:Name="WP7_UitlLib" Source="WP7_UitlLib.dll" />
+    <AssemblyPart x:Name="WP7_WebLib" Source="WP7_WebLib.dll" />
+  </Deployment.Parts>
+</Deployment>

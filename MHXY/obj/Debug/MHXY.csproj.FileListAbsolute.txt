@@ -1,0 +1,89 @@
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\Assets\ApplicationIcon.png
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\MHXY.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\MHXY.pdb
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\AppManifest.xaml
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\MHXY_Debug_AnyCPU.xap
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\App.g.cs
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\MainPage.g.cs
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\MHXY.g.resources
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\MHXY.Resources.AppResources.resources
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\MHXY.csproj.GenerateResource.Cache
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\MHXY.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\MHXY.pdb
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\XapCacheFile.xml
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\Microsoft.Phone.Controls.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\Character\EmpiricalRight.g.cs
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\Character\EmpiricalLeft.g.cs
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\obj\Debug\MHXY.csprojResolveAssemblyReference.cache
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\HtmlAgilityPack.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\System.Xml.XPath.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\WP7_ControlsLib.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\WP7_JsonLib.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\WP7_UitlLib.dll
+c:\users\修同\documents\visual studio 2012\Projects\MHXY\MHXY\Bin\Debug\WP7_WebLib.dll
+G:\wp\MHXY\MHXY\Bin\Debug\Assets\ApplicationIcon.png
+G:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+G:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+G:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+G:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+G:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+G:\wp\MHXY\MHXY\Bin\Debug\MHXY.dll
+G:\wp\MHXY\MHXY\Bin\Debug\MHXY.pdb
+G:\wp\MHXY\MHXY\Bin\Debug\AppManifest.xaml
+G:\wp\MHXY\MHXY\Bin\Debug\MHXY_Debug_AnyCPU.xap
+G:\wp\MHXY\MHXY\Bin\Debug\Microsoft.Phone.Controls.dll
+G:\wp\MHXY\MHXY\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+G:\wp\MHXY\MHXY\Bin\Debug\WP7_ControlsLib.dll
+G:\wp\MHXY\MHXY\Bin\Debug\WP7_JsonLib.dll
+G:\wp\MHXY\MHXY\Bin\Debug\WP7_UitlLib.dll
+G:\wp\MHXY\MHXY\Bin\Debug\WP7_WebLib.dll
+G:\wp\MHXY\MHXY\obj\Debug\App.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\Character\EmpiricalLeft.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\Character\EmpiricalRight.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\MainPage.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\MHXY.g.resources
+G:\wp\MHXY\MHXY\obj\Debug\MHXY.Resources.AppResources.resources
+G:\wp\MHXY\MHXY\obj\Debug\MHXY.csproj.GenerateResource.Cache
+G:\wp\MHXY\MHXY\obj\Debug\MHXY.dll
+G:\wp\MHXY\MHXY\obj\Debug\MHXY.pdb
+G:\wp\MHXY\MHXY\obj\Debug\XapCacheFile.xml
+G:\wp\MHXY\MHXY\Bin\Debug\MHXY.dll.config
+E:\wp\MHXY\MHXY\Bin\Debug\Assets\ApplicationIcon.png
+E:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+E:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+E:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+E:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+E:\wp\MHXY\MHXY\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+E:\wp\MHXY\MHXY\Bin\Debug\MHXY.dll.config
+E:\wp\MHXY\MHXY\Bin\Debug\MHXY.dll
+E:\wp\MHXY\MHXY\Bin\Debug\MHXY.pdb
+E:\wp\MHXY\MHXY\Bin\Debug\AppManifest.xaml
+E:\wp\MHXY\MHXY\Bin\Debug\MHXY_Debug_AnyCPU.xap
+E:\wp\MHXY\MHXY\Bin\Debug\HtmlAgilityPack.dll
+E:\wp\MHXY\MHXY\Bin\Debug\Microsoft.Phone.Controls.dll
+E:\wp\MHXY\MHXY\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+E:\wp\MHXY\MHXY\Bin\Debug\System.Xml.XPath.dll
+E:\wp\MHXY\MHXY\Bin\Debug\WP7_ControlsLib.dll
+E:\wp\MHXY\MHXY\Bin\Debug\WP7_JsonLib.dll
+E:\wp\MHXY\MHXY\Bin\Debug\WP7_UitlLib.dll
+E:\wp\MHXY\MHXY\Bin\Debug\WP7_WebLib.dll
+E:\wp\MHXY\MHXY\obj\Debug\App.g.cs
+E:\wp\MHXY\MHXY\obj\Debug\Character\EmpiricalLeft.g.cs
+E:\wp\MHXY\MHXY\obj\Debug\Character\EmpiricalRight.g.cs
+E:\wp\MHXY\MHXY\obj\Debug\MainPage.g.cs
+E:\wp\MHXY\MHXY\obj\Debug\MHXY.g.resources
+E:\wp\MHXY\MHXY\obj\Debug\MHXY.Resources.AppResources.resources
+E:\wp\MHXY\MHXY\obj\Debug\MHXY.csproj.GenerateResource.Cache
+E:\wp\MHXY\MHXY\obj\Debug\MHXY.dll
+E:\wp\MHXY\MHXY\obj\Debug\MHXY.pdb
+E:\wp\MHXY\MHXY\obj\Debug\XapCacheFile.xml
+E:\wp\MHXY\MHXY\obj\Debug\Character\GradeInfo.g.cs
+E:\wp\MHXY\MHXY\obj\Debug\Character\Judging.g.cs
+E:\wp\MHXY\MHXY\obj\Debug\Skill\TeacherSkill.g.cs
+E:\wp\MHXY\MHXY\obj\Debug\Skill\SecondarySkills.g.cs

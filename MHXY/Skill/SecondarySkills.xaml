@@ -1,0 +1,79 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MHXY.Skill.SecondarySkills"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot"  >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/MHXY;component/Assets/PanoramaBackground.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="辅助技能学习" FontSize="50" Margin="0,0,0,0" Height="60"/>
+        </StackPanel>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                    <RadioButton Name="radioButton_faction" Checked="radioButton_faction_Checked_1" IsChecked="True" >在帮派学习</RadioButton>
+                    <RadioButton  Name="radioButton_NPC"  Checked="radioButton_NPC_Checked_1" >向NPC学习</RadioButton>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" >
+                    <TextBlock Text="NPC处最多可学到40级 "   FontSize="24" VerticalAlignment="Center"  />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal"  Margin="0,12,0,0" >
+                    <TextBlock Text="从等级：" FontSize="24"  HorizontalAlignment="Left" VerticalAlignment="Center"  />
+                    <toolkit:PhoneTextBox x:Name="textBox_start_grade" Text="0"  KeyDown="textBox_start_grade_KeyDown_1" Width="129"   MaxLength="3" InputScope="Number"   />
+
+                    <TextBlock Text="到等级：" FontSize="24"  HorizontalAlignment="Left" VerticalAlignment="Center"  />
+                    <toolkit:PhoneTextBox x:Name="textBox_end_grade"  Text="0" KeyDown="textBox_end_grade_KeyDown_1"  Width="129" MaxLength="3" InputScope="Number"/>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
+                    <TextBlock Text="所需经验：" FontSize="24" VerticalAlignment="Center"  />
+                    <TextBox Width="330"   Name="textbox_needed_experience"    IsReadOnly="True" />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
+                    <TextBlock Text="所需金钱：" FontSize="24" VerticalAlignment="Center"  />
+                    <TextBox Width="330"   Name="textbox_needed_money"    IsReadOnly="True" />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
+                    <TextBlock Text="所需帮贡：" FontSize="24" VerticalAlignment="Center"  />
+                    <TextBox Width="105"   Name="textbox_needed_tribute"    IsReadOnly="True" />
+                    <TextBlock Text="消耗帮贡：" FontSize="24" VerticalAlignment="Center"  />
+                    <TextBox Width="105"   Name="textbox_consume_tribute"    IsReadOnly="True" />
+                </StackPanel>
+                 
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
+                    <TextBlock Text="消耗人气：" FontSize="24" VerticalAlignment="Center"  />
+                    <TextBox Width="330"   Name="textbox_consume_popularity"    IsReadOnly="True" />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,12,0,0" >
+                    <Button Width="150" Name="button_calculate" Click="button_calculate_Click" >计算</Button>
+                    <Button Width="150" Name="button_empty" Click="button_empty_Click"  >清空</Button>
+                </StackPanel>
+                
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
