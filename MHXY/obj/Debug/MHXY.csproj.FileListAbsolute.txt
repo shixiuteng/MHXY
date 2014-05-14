@@ -87,3 +87,8 @@ E:\wp\MHXY\MHXY\obj\Debug\Character\GradeInfo.g.cs
 E:\wp\MHXY\MHXY\obj\Debug\Character\Judging.g.cs
 E:\wp\MHXY\MHXY\obj\Debug\Skill\TeacherSkill.g.cs
 E:\wp\MHXY\MHXY\obj\Debug\Skill\SecondarySkills.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\MHXY.csprojResolveAssemblyReference.cache
+G:\wp\MHXY\MHXY\obj\Debug\Character\GradeInfo.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\Character\Judging.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\Skill\SecondarySkills.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\Skill\TeacherSkill.g.cs
