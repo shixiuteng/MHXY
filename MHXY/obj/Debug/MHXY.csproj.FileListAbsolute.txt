@@ -44,8 +44,6 @@ G:\wp\MHXY\MHXY\Bin\Debug\WP7_JsonLib.dll
 G:\wp\MHXY\MHXY\Bin\Debug\WP7_UitlLib.dll
 G:\wp\MHXY\MHXY\Bin\Debug\WP7_WebLib.dll
 G:\wp\MHXY\MHXY\obj\Debug\App.g.cs
-G:\wp\MHXY\MHXY\obj\Debug\Character\EmpiricalLeft.g.cs
-G:\wp\MHXY\MHXY\obj\Debug\Character\EmpiricalRight.g.cs
 G:\wp\MHXY\MHXY\obj\Debug\MainPage.g.cs
 G:\wp\MHXY\MHXY\obj\Debug\MHXY.g.resources
 G:\wp\MHXY\MHXY\obj\Debug\MHXY.Resources.AppResources.resources
@@ -93,3 +91,12 @@ E:\wp\MHXY\MHXY\Bin\Debug\Coding4Fun.Toolkit.Audio.dll
 E:\wp\MHXY\MHXY\Bin\Debug\Coding4Fun.Toolkit.Controls.dll
 E:\wp\MHXY\MHXY\Bin\Debug\Coding4Fun.Toolkit.Net.dll
 E:\wp\MHXY\MHXY\Bin\Debug\Coding4Fun.Toolkit.Storage.dll
+G:\wp\MHXY\MHXY\Bin\Debug\Properties\WMAppManifest.xml
+G:\wp\MHXY\MHXY\obj\Debug\MHXY.csprojResolveAssemblyReference.cache
+G:\wp\MHXY\MHXY\obj\Debug\UI\Character\EmpiricalLeft.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\UI\Character\EmpiricalRight.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\UI\Character\GradeInfo.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\UI\Character\Judging.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\UI\Practice\CharacterPractice.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\UI\Skill\SecondarySkills.g.cs
+G:\wp\MHXY\MHXY\obj\Debug\UI\Skill\TeacherSkill.g.cs

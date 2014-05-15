@@ -35,9 +35,9 @@
             <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
                 <TextBlock Text="选择修炼类型：" FontSize="24"  />
 
-                <toolkit:ListPicker >
-                    <toolkit:ListPickerItem Content="抗修类计算(2W一次)"  />
-                    <toolkit:ListPickerItem Content="攻修类计算(3W一次) " />
+                    <toolkit:ListPicker Name="toolkit_type" >
+                    <toolkit:ListPickerItem  Content="抗修类计算(2W一次)"  />
+                    <toolkit:ListPickerItem  Content="攻修类计算(3W一次) " />
                 </toolkit:ListPicker>
 
                 <TextBlock Text="当前修炼等级：" FontSize="24"   />
@@ -65,7 +65,7 @@
                     </StackPanel>
 
                     <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
-                        <TextBlock Text="需求金钱：" FontSize="24" />
+                        <TextBlock Text="需要金钱：" FontSize="24" />
                         <TextBlock Name="textBlock_needed_money" FontSize="24"   />
                     </StackPanel>
 
