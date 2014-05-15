@@ -17,7 +17,7 @@
     <!--LayoutRoot 是包含所有页面内容的根网格-->
     <Grid x:Name="LayoutRoot"  >
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="/Assets/mhxybg1_.png"/>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/PanoramaBackground.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
