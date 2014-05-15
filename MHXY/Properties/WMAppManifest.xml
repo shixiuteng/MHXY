@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="zh-CN" />
-  <App xmlns="" ProductID="{ef6b5f8d-eb18-430b-b4f3-79a74fe04e1b}" Title="a" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="MHXY author" Description="Sample description" Publisher="MHXY" PublisherID="{2ef69a2d-0d96-47e1-8d95-9c8c06dc6d09}">
+  <App xmlns="" ProductID="{ef6b5f8d-eb18-430b-b4f3-79a74fe04e1b}" Title="a梦幻西游工具箱" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="shixiutong" Description="梦幻各类计算" Publisher="shixiutong" PublisherID="{2ef69a2d-0d96-47e1-8d95-9c8c06dc6d09}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

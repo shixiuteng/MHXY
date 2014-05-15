@@ -481,13 +481,30 @@ namespace MHXY
         /// <summary>
         /// 最高人物等级
         /// </summary>
-        public const int highLevel = 175;
+        public const int HIGH_CharacteLevel = 175; 
 
+
+        /// <summary>
+        /// 最高召唤兽等级
+        /// </summary>
+        public const int HIGH_SummonLevel = 180;
+
+
+        /// <summary>
+        /// 最高人物技能等级
+        /// </summary>
+        public const int HIGH_CharacteSkillsLevel = 180;
 
         /// <summary>
         /// 最高辅助技能等级
         /// </summary>
-        public const int highSecondarySkillsLevel = 160;
+        public const int HIGH_SecondarySkillsLevel = 160;
+
+        /// <summary>
+        /// 最高修炼等级
+        /// </summary>
+        public const int HIGH_PracticeLevel = 25;
+
 
 
         /// <summary>

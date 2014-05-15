@@ -25,6 +25,7 @@ using WP7_WebLib.HttpPost;
 using MHXY.Model;
 using MHXY.Model.AppOnly;
 using HtmlAgilityPack;
+using Coding4Fun.Toolkit.Controls;
 
 namespace MHXY.Hepler
 {
@@ -809,5 +810,30 @@ namespace MHXY.Hepler
             return g_MS;
         }
         #endregion
+
+
+        /// <summary>
+        /// 信息提示
+        /// </summary>
+        /// <param name="content">提示的信息内容</param>
+        /// <param name="title">提示的标题</param>
+        /// <param name="timeout">提示消息的显示过期时间。单位毫秒</param>
+        public static void Coding4FunForMsg(string content, string title, int timeout)
+        {
+            SolidColorBrush White = new SolidColorBrush(Colors.White);
+            SolidColorBrush Blue = new SolidColorBrush(Colors.Blue);
+            ToastPrompt toast = new ToastPrompt
+            {
+               // Background = Blue,
+                IsTimerEnabled = true,
+                IsAppBarVisible = true,
+                MillisecondsUntilHidden = timeout,
+                Foreground = White,
+            };
+            toast.Title = title;
+            toast.Message = content;
+            toast.TextOrientation = System.Windows.Controls.Orientation.Horizontal;
+            toast.Show();
+        }
     }
 }

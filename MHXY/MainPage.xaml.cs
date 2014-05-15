@@ -30,40 +30,46 @@ namespace MHXY
             }
         }
         private void Border_Tap_EmpiricalRight(object sender, System.Windows.Input.GestureEventArgs e)
-        { 
-            
-            this.NavigationService.Navigate(new Uri("/Character/EmpiricalRight.xaml", UriKind.Relative));
+        {
+
+            this.NavigationService.Navigate(new Uri("/UI/Character/EmpiricalRight.xaml", UriKind.Relative));
         }
 
         private void Border_Tap_EmpiricalLeft(object sender, System.Windows.Input.GestureEventArgs e)
         {
 
-            this.NavigationService.Navigate(new Uri("/Character/EmpiricalLeft.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("/UI/Character/EmpiricalLeft.xaml", UriKind.Relative));
         }
 
 
         private void Border_Tap_GradeInfo(object sender, System.Windows.Input.GestureEventArgs e)
         {
 
-            this.NavigationService.Navigate(new Uri("/Character/GradeInfo.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("/UI/Character/GradeInfo.xaml", UriKind.Relative));
         }
 
         private void Border_Tap_Judging(object sender, System.Windows.Input.GestureEventArgs e)
         {
 
-            this.NavigationService.Navigate(new Uri("/Character/Judging.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("/UI/Character/Judging.xaml", UriKind.Relative));
         }
 
 
         private void Border_Tap_TeacherSkill(object sender, System.Windows.Input.GestureEventArgs e)
         {
 
-            this.NavigationService.Navigate(new Uri("/Skill/TeacherSkill.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("/UI/Skill/TeacherSkill.xaml", UriKind.Relative));
         }
         private void Border_Tap_SecondarySkills(object sender, System.Windows.Input.GestureEventArgs e)
         {
 
-            this.NavigationService.Navigate(new Uri("/Skill/SecondarySkills.xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri("/UI/Skill/SecondarySkills.xaml", UriKind.Relative));
+        }
+
+        private void Border_Tap_CharacterPractice(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+            this.NavigationService.Navigate(new Uri("/UI/Practice/CharacterPractice.xaml", UriKind.Relative));
         }
 
     }

@@ -94,18 +94,6 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="App\Config.cs" />
-    <Compile Include="Character\EmpiricalLeft.xaml.cs">
-      <DependentUpon>EmpiricalLeft.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Character\EmpiricalRight.xaml.cs">
-      <DependentUpon>EmpiricalRight.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Character\GradeInfo.xaml.cs">
-      <DependentUpon>GradeInfo.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Character\Judging.xaml.cs">
-      <DependentUpon>Judging.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Helper\Tool.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -123,10 +111,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Skill\SecondarySkills.xaml.cs">
+    <Compile Include="UI\Character\EmpiricalLeft.xaml.cs">
+      <DependentUpon>EmpiricalLeft.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Character\EmpiricalRight.xaml.cs">
+      <DependentUpon>EmpiricalRight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Character\GradeInfo.xaml.cs">
+      <DependentUpon>GradeInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Character\Judging.xaml.cs">
+      <DependentUpon>Judging.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Practice\CharacterPractice.xaml.cs">
+      <DependentUpon>CharacterPractice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Skill\SecondarySkills.xaml.cs">
       <DependentUpon>SecondarySkills.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Skill\TeacherSkill.xaml.cs">
+    <Compile Include="UI\Skill\TeacherSkill.xaml.cs">
       <DependentUpon>TeacherSkill.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ItemViewModel.cs" />
@@ -137,22 +140,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="Character\EmpiricalLeft.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Character\EmpiricalRight.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Character\GradeInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Character\Judging.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -161,13 +148,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </DesignData>
-    <Page Include="Skill\SecondarySkills.xaml">
+    <Page Include="UI\Character\EmpiricalLeft.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Character\EmpiricalRight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Character\GradeInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Character\Judging.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Practice\CharacterPractice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Skill\TeacherSkill.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="UI\Skill\SecondarySkills.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Skill\TeacherSkill.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +186,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\mhxybg1_.png" />
+    <Content Include="Assets\mhxybg1.png" />
     <Content Include="Assets\mhxybg.png" />
     <Content Include="Lib\WP7_ControlsLib.dll" />
     <Content Include="Lib\WP7_JsonLib.dll" />
@@ -217,6 +226,18 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Coding4Fun.Toolkit.Audio">
+      <HintPath>..\..\Coding4Fun.Toolkit (Windows Phone 8)\Coding4Fun.Toolkit.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="Coding4Fun.Toolkit.Controls">
+      <HintPath>..\..\Coding4Fun.Toolkit (Windows Phone 8)\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Coding4Fun.Toolkit.Net">
+      <HintPath>..\..\Coding4Fun.Toolkit (Windows Phone 8)\Coding4Fun.Toolkit.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Coding4Fun.Toolkit.Storage">
+      <HintPath>..\..\Coding4Fun.Toolkit (Windows Phone 8)\Coding4Fun.Toolkit.Storage.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack">
       <HintPath>E:\wp\oschina-wp7-app-master\wp7-app\OSChina\Lib\HtmlAgilityPack.dll</HintPath>
     </Reference>

@@ -42,7 +42,7 @@
                 <TextBlock Text="梦幻西游工具箱" FontSize="30" Margin="0,40,0,0" Height="40"></TextBlock>
             </phone:Panorama.Title>
             <phone:Panorama.Background>
-                <ImageBrush ImageSource="/MHXY;component/Assets/PanoramaBackground.png"/>
+                <ImageBrush ImageSource="/Assets/mhxybg1.png"/>
             </phone:Panorama.Background>
 
             <!--Panorama 项目一-->
@@ -116,7 +116,7 @@
                 <Grid>
                     <StackPanel   Orientation="Vertical" VerticalAlignment="Top">
                         <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-                            <Border Height="173" Width="173" Margin="12,0,0,0" Background="#FFFFB128">
+                            <Border   Tap="Border_Tap_CharacterPractice"   Height="173" Width="173" Margin="12,0,0,0" Background="#FFFFB128">
                                 <TextBlock TextWrapping="Wrap"  Text="人物修炼" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Margin="0,0,0,10"  />
                             </Border>
                             <Border Background="#FFFFB128" Height="173" Width="173" Margin="12,0,0,0">
