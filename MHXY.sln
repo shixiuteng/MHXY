@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Phone
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHXY", "MHXY\MHXY.csproj", "{EF6B5F8D-EB18-430B-B4F3-79A74FE04E1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanoramaApp1", "PanoramaApp1\PanoramaApp1.csproj", "{A252D6AD-6808-4E62-9683-2562D7B9DF82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,24 @@ Global
 		{EF6B5F8D-EB18-430B-B4F3-79A74FE04E1B}.Release|x86.ActiveCfg = Release|x86
 		{EF6B5F8D-EB18-430B-B4F3-79A74FE04E1B}.Release|x86.Build.0 = Release|x86
 		{EF6B5F8D-EB18-430B-B4F3-79A74FE04E1B}.Release|x86.Deploy.0 = Release|x86
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|ARM.Build.0 = Debug|ARM
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|ARM.Deploy.0 = Debug|ARM
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|x86.ActiveCfg = Debug|x86
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|x86.Build.0 = Debug|x86
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Debug|x86.Deploy.0 = Debug|x86
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|ARM.ActiveCfg = Release|ARM
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|ARM.Build.0 = Release|ARM
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|ARM.Deploy.0 = Release|ARM
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|x86.ActiveCfg = Release|x86
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|x86.Build.0 = Release|x86
+		{A252D6AD-6808-4E62-9683-2562D7B9DF82}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -41,10 +41,10 @@
                 </StackPanel>
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal"  Margin="0,12,0,0" >
                     <TextBlock Text="从等级：" FontSize="24"  HorizontalAlignment="Left" VerticalAlignment="Center"  />
-                    <toolkit:PhoneTextBox x:Name="textBox_start_grade" Text="0"  KeyDown="textBox_start_grade_KeyDown_1" Width="129"   MaxLength="3" InputScope="Number"   />
+                    <toolkit:PhoneTextBox GotFocus="textBox_start_grade_GotFocus" LostFocus="textBox_start_grade_LostFocus" x:Name="textBox_start_grade" Text="0"  KeyDown="textBox_start_grade_KeyDown_1" Width="129"   MaxLength="3" InputScope="Number"   />
 
                     <TextBlock Text="到等级：" FontSize="24"  HorizontalAlignment="Left" VerticalAlignment="Center"  />
-                    <toolkit:PhoneTextBox x:Name="textBox_end_grade"  Text="0" KeyDown="textBox_end_grade_KeyDown_1"  Width="129" MaxLength="3" InputScope="Number"/>
+                    <toolkit:PhoneTextBox GotFocus="textBox_end_grade_GotFocus" LostFocus="textBox_end_grade_LostFocus" x:Name="textBox_end_grade"  Text="0" KeyDown="textBox_end_grade_KeyDown_1"  Width="129" MaxLength="3" InputScope="Number"/>
                 </StackPanel>
 
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >

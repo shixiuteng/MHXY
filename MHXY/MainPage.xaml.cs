@@ -72,5 +72,21 @@ namespace MHXY
             this.NavigationService.Navigate(new Uri("/UI/Practice/CharacterPractice.xaml", UriKind.Relative));
         }
 
+        private void Border_Tap_SealSimulation(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+            this.NavigationService.Navigate(new Uri("/UI/Practice/SealSimulation.xaml", UriKind.Relative));
+        }
+        private void Border_Tap_PracticeResults(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+            this.NavigationService.Navigate(new Uri("/UI/Practice/PracticeResults.xaml", UriKind.Relative));
+        }
+        private void Border_Tap_FlyLiftPractice(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+
+            this.NavigationService.Navigate(new Uri("/UI/Practice/FlyLiftPractice.xaml", UriKind.Relative));
+        }
+
     }
 }

@@ -100,5 +100,25 @@ namespace MHXY.UI.Character
             textBox_reach_grade.Text = "";
             textBox_Surplus_experience.Text = ""; 
         }
+
+        private void textBox_now_experience_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_GotFocus(textBox_now_experience);
+        }
+
+        private void textBox_now_experience_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_LostFocus(textBox_now_experience);
+        }
+
+        private void textBox_now_grade_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_GotFocus(textBox_now_grade);
+        }
+
+        private void textBox_now_grade_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_LostFocus(textBox_now_grade);
+        }
     }
 }

@@ -17,7 +17,7 @@
     <!--LayoutRoot 是包含所有页面内容的根网格-->
     <Grid x:Name="LayoutRoot"  >
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="/Assets/PanoramaBackground.png"/>
+            <ImageBrush Stretch="Fill" ImageSource="/MHXY;component/Assets/PanoramaBackground.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -34,10 +34,10 @@
             <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal"> 
                     <TextBlock Text="现在等级：" FontSize="24"  HorizontalAlignment="Left" VerticalAlignment="Center"  />
-                    <toolkit:PhoneTextBox x:Name="textBox_start_grade" Text="0"  KeyDown="textBox_start_grade_KeyDown" Width="105"   MaxLength="3" InputScope="Number"   />
+                    <toolkit:PhoneTextBox GotFocus="textBox_start_grade_GotFocus" LostFocus="textBox_start_grade_LostFocus" x:Name="textBox_start_grade" Text="0"  KeyDown="textBox_start_grade_KeyDown" Width="105"   MaxLength="3" InputScope="Number"   />
                       
                     <TextBlock Text="目标等级：" FontSize="24"  HorizontalAlignment="Left" VerticalAlignment="Center"  />
-                    <toolkit:PhoneTextBox x:Name="textBox_end_grade"  Text="0" KeyDown="textBox_end_grade_KeyDown"  Width="105" MaxLength="3" InputScope="Number"/> 
+                    <toolkit:PhoneTextBox GotFocus="textBox_end_grade_GotFocus" LostFocus="textBox_end_grade_LostFocus" x:Name="textBox_end_grade"  Text="0" KeyDown="textBox_end_grade_KeyDown"  Width="105" MaxLength="3" InputScope="Number"/> 
                 </StackPanel>
                 
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >

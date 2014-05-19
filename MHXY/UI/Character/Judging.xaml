@@ -35,12 +35,12 @@
             <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
                     <TextBlock Text="放生时召唤兽等级：" FontSize="24" VerticalAlignment="Center"  />
-                    <toolkit:PhoneTextBox Width="233" Text="0" Name="textBox_release_grade" KeyDown="textBox_release_grade_KeyDown_1" InputScope="Number"/>
+                    <toolkit:PhoneTextBox Width="233" GotFocus="textBox_release_grade_GotFocus" LostFocus="textBox_release_grade_LostFocus" Text="0" Name="textBox_release_grade" KeyDown="textBox_release_grade_KeyDown_1" InputScope="Number"/>
                    
                 </StackPanel>
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
                     <TextBlock Text="捕捉时召唤兽等级：" FontSize="24" VerticalAlignment="Center"  />
-                    <toolkit:PhoneTextBox Width="233" Text="0"  Name="textBox_catch_grade" KeyDown="textBox_catch_grade_KeyDown_1"  InputScope="Number"   />
+                    <toolkit:PhoneTextBox Width="233" GotFocus="textBox_catch_grade_GotFocus" LostFocus="textBox_catch_grade_LostFocus" Text="0"  Name="textBox_catch_grade" KeyDown="textBox_catch_grade_KeyDown_1"  InputScope="Number"   />
                 </StackPanel>
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
                     <TextBlock Text="增加阴德：" FontSize="24" VerticalAlignment="Center"  />

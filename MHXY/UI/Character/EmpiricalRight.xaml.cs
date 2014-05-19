@@ -133,6 +133,26 @@ namespace MHXY.UI.Character
              textbox_requires_experience.Text = "";
 
         }
+
+        private void textBox_start_grade_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_GotFocus(textBox_start_grade);
+        }
+
+        private void textBox_start_grade_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_LostFocus(textBox_start_grade);
+        }
+
+        private void textBox_end_grade_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_GotFocus(textBox_end_grade);
+        }
+
+        private void textBox_end_grade_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_LostFocus(textBox_end_grade);
+        }
          
          
         

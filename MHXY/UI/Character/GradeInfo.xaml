@@ -35,7 +35,7 @@
             <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
                     <TextBlock Text="人物等级：" FontSize="24" VerticalAlignment="Center"  />
-                    <toolkit:PhoneTextBox Width="181" Text="0" Name="textBox_grade" KeyDown="textBox_grade_KeyDown_1"  InputScope="Number"/>
+                    <toolkit:PhoneTextBox GotFocus="textBox_grade_GotFocus" LostFocus="textBox_grade_LostFocus" Width="181" Text="0" Name="textBox_grade" KeyDown="textBox_grade_KeyDown_1"  InputScope="Number"/>
                     <Button  Width="150" Name="button_calculate" Click="button_calculate_Click_1" >计算</Button>
                 </StackPanel>
                 <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >

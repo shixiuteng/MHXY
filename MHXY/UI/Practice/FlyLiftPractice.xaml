@@ -1,0 +1,91 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MHXY.UI.Practice.FlyLiftPractice"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False"  >
+    <ScrollViewer  >
+        <ScrollViewer.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/MHXY;component/Assets/PanoramaBackground.png"/>
+        </ScrollViewer.Background>
+
+        <!--LayoutRoot 是包含所有页面内容的根网格-->
+        <Grid x:Name="LayoutRoot" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--TitlePanel 包含应用程序的名称和页标题-->
+            <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                <TextBlock Text="飞升降修" FontSize="50" Margin="0,0,0,0" Height="60"/>
+            </StackPanel>
+
+            <!--ContentPanel - 在此处放置其他内容-->
+            <Grid x:Name="ContentPanel"  Grid.Row="1" Margin="12,0,12,0">
+                <StackPanel Margin="0,4,16,70"  Orientation="Vertical" VerticalAlignment="Top">
+                   
+                    <TextBlock Text="选择修炼方式：" FontSize="24"  />
+                    <toolkit:ListPicker Name="toolkit_type" >
+                        <toolkit:ListPickerItem  Content="防御/法抗计算(2W一次)"  />
+                        <toolkit:ListPickerItem  Content="攻击/法术计算(3W一次) " />
+                    </toolkit:ListPicker>
+                         
+                    <TextBlock Text="目前修炼等级：" FontSize="24"  />
+                    <TextBox  Name="textbox_now_grade" GotFocus="textbox_now_grade_GotFocus" Text="0" LostFocus="textbox_now_grade_LostFocus" MaxLength="2" KeyDown="textbox_now_grade_KeyDown" InputScope="Number"  />
+   
+                    <TextBlock Text="目前修炼上限：" FontSize="24"   /> 
+                    
+                    <toolkit:ListPicker Name="toolkit_now_caps" >
+                        <toolkit:ListPickerItem  Content="20"  />
+                        <toolkit:ListPickerItem  Content="21" />
+                        <toolkit:ListPickerItem  Content="22" />
+                        <toolkit:ListPickerItem  Content="23" />
+                        <toolkit:ListPickerItem  Content="24" />
+                    </toolkit:ListPicker>
+                    
+                    <TextBlock Text="目标修炼等级：" FontSize="24" />
+
+                    <toolkit:ListPicker Name="toolkit_target_grade" > 
+                        <toolkit:ListPickerItem  Content="21" />
+                        <toolkit:ListPickerItem  Content="22" />
+                        <toolkit:ListPickerItem  Content="23" />
+                        <toolkit:ListPickerItem  Content="24" />
+                        <toolkit:ListPickerItem  Content="25" />
+                    </toolkit:ListPicker>
+                     
+                    <CheckBox Name="checkbox_isfly"  Content="是否飞升" HorizontalAlignment="Right"  />
+ 
+                    
+                    <StackPanel Name="stackpanel_result" HorizontalAlignment="Left" Visibility="Visible" Orientation="Vertical" Margin="0,12,0,0" >
+                        <phone:LongListSelector Width="400"  x:Name="longlistselector_result"/>
+                    </StackPanel>
+                
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+    <!--演示 ApplicationBar 用法的示例代码-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar Opacity="0.5" IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton  Click="ApplicationBarIconButton_back_Click"  IconUri="/Assets/AppBar/back.png" Text="返回"/>
+
+            <shell:ApplicationBarIconButton Click="ApplicationBarIconButton_calculate_Click"  IconUri="/Toolkit.Content/ApplicationBar.Check.png" Text="计算"/>
+            <shell:ApplicationBarIconButton Click="ApplicationBarIconButton_empty_Click"  IconUri="/Toolkit.Content/ApplicationBar.Cancel.png" Text="清空"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="菜单项 1"/>
+                <shell:ApplicationBarMenuItem Text="菜单项 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

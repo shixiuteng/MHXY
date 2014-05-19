@@ -19,7 +19,7 @@
         </ScrollViewer.Background>
 
         <!--LayoutRoot 是包含所有页面内容的根网格-->
-    <Grid x:Name="LayoutRoot">  
+    <Grid x:Name="LayoutRoot" >  
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -31,23 +31,23 @@
         </StackPanel>
     
             <!--ContentPanel - 在此处放置其他内容-->
-            <Grid x:Name="ContentPanel"  Grid.Row="1">
-            <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
+            <Grid x:Name="ContentPanel"  Grid.Row="1" Margin="12,0,12,0">
+                <StackPanel Margin="0,4,16,70"  Orientation="Vertical" VerticalAlignment="Top">
                 <TextBlock Text="选择修炼类型：" FontSize="24"  />
 
-                    <toolkit:ListPicker Name="toolkit_type" >
-                    <toolkit:ListPickerItem  Content="抗修类计算(2W一次)"  />
-                    <toolkit:ListPickerItem  Content="攻修类计算(3W一次) " />
+                <toolkit:ListPicker Name="toolkit_type" >
+                        <toolkit:ListPickerItem  Content="防御/法抗计算(2W一次)"  />
+                        <toolkit:ListPickerItem  Content="攻击/法术计算(3W一次) " />
                 </toolkit:ListPicker>
 
                 <TextBlock Text="当前修炼等级：" FontSize="24"   />
-                <TextBox  Name="textbox_now_grade" LostFocus="textbox_now_grade_LostFocus" MaxLength="2" KeyDown="textbox_now_grade_KeyDown" InputScope="Number"  />
+                <TextBox  Name="textbox_now_grade" GotFocus="textbox_now_grade_GotFocus" Text="0" LostFocus="textbox_now_grade_LostFocus" MaxLength="2" KeyDown="textbox_now_grade_KeyDown" InputScope="Number"  />
                
                 <TextBlock Text="当前修炼经验：" FontSize="24" />
-                <TextBox  Name="textbox_now_empirical" LostFocus="textbox_now_empirical_LostFocus"  MaxLength="4" KeyDown="textbox_now_empirical_KeyDown"  InputScope="Number"  />
+                <TextBox  Name="textbox_now_empirical" GotFocus="textbox_now_empirical_GotFocus" Text="0" LostFocus="textbox_now_empirical_LostFocus"  MaxLength="4" KeyDown="textbox_now_empirical_KeyDown"  InputScope="Number"  />
 
                 <TextBlock Text="目标修炼等级："  FontSize="24" />
-                <TextBox   Name="textbox_target_grade"  MaxLength="2" LostFocus="textbox_target_grade_LostFocus" KeyDown="textbox_target_grade_KeyDown"  InputScope="Number"  />
+                 <TextBox   Name="textbox_target_grade" GotFocus="textbox_target_grade_GotFocus" Text="0"  MaxLength="2" LostFocus="textbox_target_grade_LostFocus" KeyDown="textbox_target_grade_KeyDown"  InputScope="Number"  />
                 
                 <StackPanel Name="stackpanel_result" HorizontalAlignment="Left" Visibility="Collapsed" Orientation="Vertical" Margin="0,12,0,0" >
                     <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0" >
@@ -73,12 +73,7 @@
                         <TextBlock Text="需要总修炼经验：" FontSize="24" />
                         <TextBlock Name="textBlock_sum_empirical" FontSize="24"   />
                     </StackPanel>
-                </StackPanel>
-                
-                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,12,0,65" >
-                    <Button Width="150" Name="button_calculate"  Click="button_calculate_Click" >计算</Button>
-                    <Button Width="150" Name="button_empty" Click="button_empty_Click" >清空</Button>
-                </StackPanel>
+                </StackPanel> 
                
             </StackPanel> 
         </Grid> 
@@ -86,7 +81,9 @@
     </ScrollViewer>
     <!--演示 ApplicationBar 用法的示例代码-->
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar Opacity="0.5" IsVisible="True" IsMenuEnabled="True">
+        <shell:ApplicationBar Opacity="0.5" IsVisible="True" IsMenuEnabled="False">
+            <shell:ApplicationBarIconButton  Click="ApplicationBarIconButton_back_Click"  IconUri="/Assets/AppBar/back.png" Text="返回"/>
+
             <shell:ApplicationBarIconButton Click="ApplicationBarIconButton_calculate_Click"  IconUri="/Toolkit.Content/ApplicationBar.Check.png" Text="计算"/>
             <shell:ApplicationBarIconButton Click="ApplicationBarIconButton_empty_Click"  IconUri="/Toolkit.Content/ApplicationBar.Cancel.png" Text="清空"/>
             <shell:ApplicationBar.MenuItems>

@@ -812,6 +812,34 @@ namespace MHXY.Hepler
         #endregion
 
 
+       
+
+        #region 公共方法
+        /// <summary>
+        /// 公共方法textbox获取焦点判断当前是否等于0，否则替换空
+        /// </summary>
+        /// <param name="s"></param>
+        public static void textbox_GotFocus(TextBox s)
+        {
+            if (s.Text.Equals("0"))
+            {
+                s.Text = "";
+            }
+        }
+
+
+        /// <summary>
+        /// 公共方法textbox失去焦点判断当前是否为空否则替换0
+        /// </summary>
+        /// <param name="s"></param>
+        public static void  textbox_LostFocus(TextBox s)
+        {
+            if (s.Text.Equals(""))
+            {
+                s.Text = "0";
+            }
+        }
+
         /// <summary>
         /// 信息提示
         /// </summary>
@@ -824,7 +852,7 @@ namespace MHXY.Hepler
             SolidColorBrush Blue = new SolidColorBrush(Colors.Blue);
             ToastPrompt toast = new ToastPrompt
             {
-               // Background = Blue,
+                // Background = Blue,
                 IsTimerEnabled = true,
                 IsAppBarVisible = true,
                 MillisecondsUntilHidden = timeout,
@@ -835,5 +863,7 @@ namespace MHXY.Hepler
             toast.TextOrientation = System.Windows.Controls.Orientation.Horizontal;
             toast.Show();
         }
+
+        #endregion
     }
 }

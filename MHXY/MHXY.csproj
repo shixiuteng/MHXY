@@ -90,6 +90,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AlphaKeyGroup.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -125,6 +126,18 @@
     </Compile>
     <Compile Include="UI\Practice\CharacterPractice.xaml.cs">
       <DependentUpon>CharacterPractice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Practice\FlyLiftPractice.xaml.cs">
+      <DependentUpon>FlyLiftPractice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Practice\PracticeResults.xaml.cs">
+      <DependentUpon>PracticeResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Practice\SealSimulation.xaml.cs">
+      <DependentUpon>SealSimulation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Practice\SealSimulationList.xaml.cs">
+      <DependentUpon>SealSimulationList.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Skill\SecondarySkills.xaml.cs">
       <DependentUpon>SecondarySkills.xaml</DependentUpon>
@@ -168,6 +181,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UI\Practice\FlyLiftPractice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Practice\PracticeResults.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Practice\SealSimulation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Practice\SealSimulationList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\Skill\SecondarySkills.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -186,6 +214,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\AppBar\back.png" />
     <Content Include="Assets\mhxybg1_.png" />
     <Content Include="Assets\mhxybg1.png" />
     <Content Include="Assets\mhxybg.png" />
@@ -194,6 +223,8 @@
     <Content Include="Lib\WP7_UitlLib.dll" />
     <Content Include="Lib\WP7_WebLib.dll" />
     <Content Include="PanoramaApp3.sln" />
+    <Content Include="README_FIRST.txt" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
@@ -243,7 +274,7 @@
     </Reference>
     <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
-      <HintPath>..\packages\SilverlightToolkitWP.4.2012.6.25\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath">
       <HintPath>E:\wp\oschina-wp7-app-master\wp7-app\OSChina\Lib\System.Xml.XPath.dll</HintPath>

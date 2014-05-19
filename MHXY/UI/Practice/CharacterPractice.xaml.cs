@@ -41,7 +41,21 @@ namespace MHXY.UI.Practice
             if (e.Key.GetHashCode() == 255)
             {
                 e.Handled = true;
-            } 
+            }
+            else
+            {
+
+                if (!e.Key.ToString().ToLower().Equals("back") && !textbox_now_grade.Text.Equals(""))
+                {
+                    int num = Convert.ToInt16(textbox_now_grade.Text + e.Key.ToString().Substring(1));
+                    if (num > Config.HIGH_PracticeLevel)
+                    {
+                        Tool.Coding4FunForMsg("修炼等级不得超过" + Config.HIGH_PracticeLevel + "级", "", 1000);
+
+                        e.Handled = true;
+                    }
+                }
+            }
             base.OnKeyDown(e);
         }
 
@@ -50,7 +64,21 @@ namespace MHXY.UI.Practice
             if (e.Key.GetHashCode() == 255)
             {
                 e.Handled = true;
-            } 
+            }
+            else
+            {
+
+                if (!e.Key.ToString().ToLower().Equals("back") && !textbox_now_empirical.Text.Equals(""))
+                {
+                    int num = Convert.ToInt16(textbox_now_empirical.Text + e.Key.ToString().Substring(1));
+                    if (num % 10 != 0)
+                    {
+                        Tool.Coding4FunForMsg("当前修炼经验只能是10的倍数", "", 1000);
+
+                        e.Handled = true;
+                    }
+                }
+            }
             base.OnKeyDown(e);
         }
 
@@ -59,57 +87,48 @@ namespace MHXY.UI.Practice
             if (e.Key.GetHashCode() == 255)
             {
                 e.Handled = true;
-            } 
+            }
+            else
+            {
+
+                if (!e.Key.ToString().ToLower().Equals("back") && !textbox_target_grade.Text.Equals(""))
+                {
+                    int num = Convert.ToInt16(textbox_target_grade.Text + e.Key.ToString().Substring(1));
+                    if (num > Config.HIGH_PracticeLevel)
+                    {
+                        Tool.Coding4FunForMsg("修炼等级不得超过" + Config.HIGH_PracticeLevel + "级", "", 1000);
+
+                        e.Handled = true;
+                    }
+                }
+            }
             base.OnKeyDown(e);
         }
 
-        /// <summary>
-        /// 计算
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void button_calculate_Click(object sender, RoutedEventArgs e)
-        {
-            Calculate();
-           
-        }
-
+         
         private void textbox_now_grade_LostFocus(object sender, RoutedEventArgs e)
         {
-            if (Convert.ToInt16(textbox_now_grade.Text) > Config.HIGH_PracticeLevel)
-            {
-                Tool.Coding4FunForMsg("修炼等级不得超过" + Config.HIGH_PracticeLevel + "级", "", 1000);
-                textbox_now_grade.Focus();
-            }
+            Tool.textbox_LostFocus(textbox_now_grade);
+
+            
 
         }
+
+       
 
         private void textbox_now_empirical_LostFocus(object sender, RoutedEventArgs e)
         {
-            if (Convert.ToInt16(textbox_now_empirical.Text) % 10 != 0)
-            {
-                Tool.Coding4FunForMsg("当前修炼经验只能是10的倍数", "", 1000);
-                textbox_now_empirical.Focus();
-            }
+            Tool.textbox_LostFocus(textbox_now_empirical);
+             
         }
 
         private void textbox_target_grade_LostFocus(object sender, RoutedEventArgs e)
         {
-            
-
-            if (Convert.ToInt16(textbox_target_grade.Text) > Config.HIGH_PracticeLevel)
-            {
-                Tool.Coding4FunForMsg("修炼等级不得超过" + Config.HIGH_PracticeLevel + "级", "", 1000);
-                textbox_target_grade.Focus();
-            }
-
+            Tool.textbox_LostFocus(textbox_target_grade); 
+           
 
         }
-
-        private void button_empty_Click(object sender, RoutedEventArgs e)
-        {
-            Empty();
-        }
+         
 
         private void ApplicationBarIconButton_calculate_Click(object sender, EventArgs e)
         {
@@ -125,7 +144,13 @@ namespace MHXY.UI.Practice
         /// 清空
         /// </summary>
         public void Empty() {
-             
+
+            textbox_now_grade.Text = "0";
+
+            textbox_now_empirical.Text = "0";
+
+            textbox_target_grade.Text = "0";
+          
             textBlock_character_grade.Text = "";
             textBlock_sum_tribute.Text = "";
             textBlock_sum_empirical.Text = "";
@@ -138,7 +163,7 @@ namespace MHXY.UI.Practice
         /// 计算
         /// </summary>
         public void Calculate() {
-           
+            this.Focus();
             if (textbox_now_grade.Text.Equals(""))
             {
                 textbox_now_grade.Text = "0";
@@ -158,7 +183,7 @@ namespace MHXY.UI.Practice
             if (Convert.ToInt16(textbox_now_grade.Text) > Config.HIGH_PracticeLevel)
             {
                 Tool.Coding4FunForMsg("修炼等级不得超过" + Config.HIGH_PracticeLevel + "级", "", 1000);
-                textbox_now_grade.Focus();
+               // textbox_now_grade.Focus();
                 return;
             }
 
@@ -168,21 +193,39 @@ namespace MHXY.UI.Practice
                 Tool.Coding4FunForMsg("当前修炼经验只能是10的倍数", "", 1000);
                 return;
             }
-
-
+             
             if (Convert.ToInt16(textbox_target_grade.Text) > Config.HIGH_PracticeLevel)
             {
                 Tool.Coding4FunForMsg("修炼等级不得超过" + Config.HIGH_PracticeLevel + "级", "", 1000);
-                textbox_target_grade.Focus();
+              //  textbox_target_grade.Focus();
                 return;
-            }
-            if (Convert.ToInt16(textbox_target_grade.Text) !=0 && Convert.ToInt16(textbox_now_empirical.Text) >= xlexpchecks[Convert.ToInt16(textbox_now_grade.Text)])
+            } 
+
+            if (Convert.ToInt16(textbox_target_grade.Text) < Convert.ToInt16(textbox_now_grade.Text))
             {
-                Tool.Coding4FunForMsg("当前修炼经验不能超过当前修炼等级的上限", "", 1000);
-                textbox_now_empirical.Focus();
+                Tool.Coding4FunForMsg("目标等级不得小于当前等级", "", 1000); 
                 return;
             }
 
+            if (Convert.ToInt16(textbox_target_grade.Text) == Convert.ToInt16(textbox_now_grade.Text))
+            {
+                textBlock_character_grade.Text = "0";
+                textBlock_sum_tribute.Text = "0";
+                textBlock_sum_empirical.Text = "0";
+                textBlock_needed_money.Text = "0";
+                textBlock_riches.Text = "0";
+                stackpanel_result.Visibility = Visibility.Visible;
+                return;
+            }
+
+            if (Convert.ToInt16(textbox_target_grade.Text) != 0 && Convert.ToInt16(textbox_now_empirical.Text) >= xlexpchecks[Convert.ToInt16(textbox_now_grade.Text)])
+            {
+                Tool.Coding4FunForMsg("当前修炼经验不能超过当前修炼等级的上限", "", 1000);
+               // textbox_now_empirical.Focus();
+                return;
+            }
+
+           
             if (toolkit_type.SelectedIndex == 0)
             {
                 type = 0.2;
@@ -190,20 +233,48 @@ namespace MHXY.UI.Practice
             else {
                 type = 0.3;
             }
-            textBlock_character_grade.Text = xlrwlvs[Convert.ToInt16(textbox_target_grade.Text)].ToString()+"级";
+
+
+            textBlock_character_grade.Text = xlrwlvs[Convert.ToInt16(textbox_target_grade.Text)].ToString() + "级";
             textBlock_sum_tribute.Text = xlbgs[Convert.ToInt16(textbox_target_grade.Text)].ToString();
             long sumExp = 0;
             for (int i = Convert.ToInt16(textbox_now_grade.Text); i < Convert.ToInt16(textbox_target_grade.Text); i++)
             {
-                sumExp = sumExp + xlexpchecks[i]; 
+                sumExp = sumExp + xlexpchecks[i];
             }
 
-            textBlock_sum_empirical.Text = Convert.ToInt16(textbox_target_grade.Text)==0? "0":(sumExp - long.Parse(textbox_now_empirical.Text)) + "";
+            textBlock_sum_empirical.Text = Convert.ToInt16(textbox_target_grade.Text) == 0 ? "0" : (sumExp - long.Parse(textbox_now_empirical.Text)) + "";
             textBlock_needed_money.Text = (sumExp * type).ToString() + "万";
             textBlock_riches.Text = (sumExp * 0.5).ToString();
-            stackpanel_result.Visibility = Visibility.Visible; 
+            stackpanel_result.Visibility = Visibility.Visible;
         }
 
+        private void ApplicationBarIconButton_back_Click(object sender, EventArgs e)
+        {
+            if (this.NavigationService.CanGoBack)
+            {
+                NavigationService.GoBack();
+            }
+        }
+  
+        private void textbox_now_grade_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_GotFocus(textbox_now_grade);
+        }
+
+        private void textbox_now_empirical_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_GotFocus(textbox_now_empirical);
+        }
+
+        private void textbox_target_grade_GotFocus(object sender, RoutedEventArgs e)
+        {
+           Tool.textbox_GotFocus(textbox_target_grade);
+        }
+
+       
+
+      
      
     }
 }

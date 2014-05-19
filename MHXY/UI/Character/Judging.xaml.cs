@@ -104,5 +104,25 @@ namespace MHXY.UI.Character
             }
             base.OnKeyDown(e);
         }
+
+        private void textBox_release_grade_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_GotFocus(textBox_release_grade);
+        }
+
+        private void textBox_release_grade_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_LostFocus(textBox_release_grade);
+        }
+
+        private void textBox_catch_grade_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_GotFocus(textBox_catch_grade);
+        }
+
+        private void textBox_catch_grade_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Tool.textbox_LostFocus(textBox_catch_grade);
+        }
     }
 }
